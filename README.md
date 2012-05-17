@@ -5,7 +5,7 @@ they will all provide the following:
 
 * OAuth login strategy with Omniauth with the following routes and a Session controller
 
-```
+```ruby
   match '/auth/failure' => 'sessions#failure'
   match '/signout' => 'sessions#destroy', :as => :signout
   match '/signin' => 'sessions#new', :as => :signin
@@ -16,7 +16,7 @@ they will all provide the following:
 
 * A User model with the following attributes
 
-```
+```ruby
   uid: the mailchimp unique id
   email: mailchimp account email address
   apikey: mailchimp apikey
@@ -29,4 +29,3 @@ TODO:
 * ask for mailchimp oauth client id and secret in wizard
 * write and hook in new relic recipe
 * fix powder recipe to run in app directory
-* 
